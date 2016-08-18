@@ -1,5 +1,7 @@
 # raspberryPiGitlab
+The repository provides:
 The yocto code needed to at Gitlab functionality to the RaspberryPi 
+The adjusted source code need to compile and run gitlab on the RaspberryPi hardware.
 
 1)Description
 
