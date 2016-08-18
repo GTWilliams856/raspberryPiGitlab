@@ -1,0 +1,35 @@
+The generic notes for the process used in engineering the product. This includes miss steps and mistakes for future reference.
+
+Index
+1) Hardware Checks against current supported gitlab architectures.
+2) Gitlab installation on X86 machine from source.
+
+
+
+Descriptions
+
+1) Currently the Raspberry Pi 2 is only supported by the Gitlab community edition for Raspbrian. There are rpms and deb files for
+Ubuntu and Centos that will require significant changes to work with yocto. Creating a for the Raspberry Pi and then including this
+as with the yocto build is an option that will be examined next.
+
+2)
+GitLab was compiled and installed on an X86 machine to validate feasibility before attempting any cross compilation. All network
+features were configured to run on local loopback only due to the university network connection in use during development.
+Packages / Dependencies - installations from upstream are stored in a seperate file in this repository.
+Ruby - Including defined Gem installations and bundle installs
+Go - The Go compiler was a installed from source for use with the gitlab-workhorse daemon.
+System Users - a seperate user was created to manage the new servers required for a gitlab respository backend. 
+Database - The option was taken for postgresql because it requires slightly less configuration in this context. (note security issues may arise as no password options have been included at this point)0
+Redis - Used as an in memeory data store, with a similar concept to a database. This is used by the gitlab backend.
+GitLab - Target software to build.
+Nginx - 
+
+
+
+References/Credits
+
+https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/install/installation.md
+Connor Shea's gitlab from source installation tutorials.
+
+https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/install/requirements.md
+Gitlab installation requirements, notable for working within the Raspberry Pi's limitations.
