@@ -8,3 +8,6 @@ email sending from gitlab is disabled by default. This can be changed in the App
 2)Installation instructions
 3)Use
 4)Licencing
+
+
+Note: 'root' user name for the primary databases, with the password being  'public'. This is not intended for serious release due to the security issues this raises.
