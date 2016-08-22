@@ -12,4 +12,4 @@ email sending from gitlab is disabled by default. This can be changed in the App
 4)Licencing
 
 
-Note: 'root' user name for the primary databases, with the password being  'public5858'. This is not intended for serious release due to the security issues this raises.
+Note: on the X86 installation from source, 'root' is the user name for the primary databases, with the password being  'public5858'. This is not intended for public release due to the security issues this raises.
