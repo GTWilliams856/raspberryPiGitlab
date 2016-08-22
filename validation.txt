@@ -1,0 +1,12 @@
+A breif overview of how the installation was validated to be correct:
+
+
+Build:
+Upon build and transfer of image to the target should the file:
+/opt/gitlab/version-manifest.txt
+Should exist and the directory populated with gitlab embedded files.
+
+Repository use:
+A user should able to add a file to a repository on the target. The target should then contain that file on the SD card.
+This should be done by connecting an eithernet cable to the raspberry pi and interacting with the target using the firefox web
+browser to upload a file.
